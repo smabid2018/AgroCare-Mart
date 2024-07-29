@@ -1,0 +1,110 @@
+@charset "ISO-8859-1";
+/*  BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #566270;
+  position: relative;
+  min-height: 100%;
+  background-color: white;
+}
+
+.product > img {
+    max-width: 100%;
+	display: block;
+	margin-top: auto;
+}
+
+/* DEMO STYLES */
+.category-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  
+  main {
+  
+    .category-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 20px;
+      grid-gap: 20px;
+      grid-auto-flow: row;
+    }
+    .category-card{
+        border-width: 1px; 
+        border-style: solid; 
+        border-color: black;
+
+        h3{
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+
+        
+    }
+    
+    
+
+
+    .category-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-rows: 1fr 1fr; /* Two equal rows */
+        grid-gap: 4px; /* Add spacing between items */
+    	
+    }
+    .product{
+        /* Styling for product item */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        margin:4px;
+        
+
+        span{
+            font-size: small;
+            margin-top: auto;
+        }
+    }
+  }
+
+    .view-more{
+        display: flex;
+        justify-content: center;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4E9CAF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    .btn:hover {
+        background-color: #FF7A59; /* New color on hover */
+    }
+}

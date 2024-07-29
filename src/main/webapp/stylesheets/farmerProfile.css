@@ -1,0 +1,87 @@
+@charset "ISO-8859-1";
+.user-container{
+    bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vh;
+    background-color: #fdf5e6 ;
+}
+
+.right-control{
+    left: 0;
+    width: 60vh;
+}
+
+.right-control .profile-card .profile-image{ 
+    text-align: center;
+    img{
+        max-width: 300px;
+        max-height: 400px; 
+    }
+
+}
+
+.profile-card{
+    margin-top: 5vh;
+    background-color:#E3F2FD;
+    box-shadow: 2px 2px 15px blanchedalmond;
+    
+
+    .header{
+        background:#D0D3D4 ;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .body{
+        padding: 1vh;
+    }
+
+    .body label{
+        text-align:justify;
+        font-size: larger;
+        
+    }
+
+    .body input{
+    width:98%;
+    font-size: 18px;
+    background: #fffffff4;
+    border: 0;  
+    border-radius: 4px;
+    margin-bottom: 10px;  
+    padding: 5px;
+    }
+
+    .body input:focus{
+        background-color: #E5E6E7;
+    }
+    .update-btn{
+        text-align: center;
+        margin: 2vh;
+        font-size: 25;
+
+        button{
+            max-width:20vh;
+            border: 1px;
+            border-radius: 6px;
+            color: antiquewhite;
+            background-color: #aa0b18;
+            padding: 10px 20px;
+        }
+    
+        button:hover {
+            color: #aa0b18;
+            background: white;
+            border: 2px solid #aa0b18;
+        }
+    }
+}
+
+
+.account-details-div{
+    width: 70vh;
+    min-height: 70vh;
+}
